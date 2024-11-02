@@ -5,9 +5,10 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class MacAddressRequestDto {
+public class ReadingSensorRequestDto {
     private Long sensorId;
-    private String macAddress;
+    private Float value;
+    private String unit;
 
     // Constructor, Getters y Setters
 }

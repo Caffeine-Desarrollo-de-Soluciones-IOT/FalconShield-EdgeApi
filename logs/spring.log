@@ -182,3 +182,122 @@ Consider defining a bean of type 'com.verysafe.falconshield.actuators.applicatio
 2024-11-02T16:36:36.952-05:00  INFO 16448 --- [falconshield] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-02T16:36:36.955-05:00  INFO 16448 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-11-02T16:36:38.085-05:00  INFO 16448 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T16:57:21.405-05:00  INFO 18140 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Starting FalconshieldApplication using Java 21.0.5 with PID 18140 (C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes started by Gaby in C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi)
+2024-11-02T16:57:21.411-05:00  INFO 18140 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T16:57:21.455-05:00  INFO 18140 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-02T16:57:21.456-05:00  INFO 18140 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-02T16:57:22.124-05:00  INFO 18140 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T16:57:22.197-05:00  INFO 18140 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-11-02T16:57:22.742-05:00  INFO 18140 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-02T16:57:22.755-05:00  INFO 18140 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T16:57:22.755-05:00  INFO 18140 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02T16:57:22.803-05:00  INFO 18140 --- [falconshield] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T16:57:22.804-05:00  INFO 18140 --- [falconshield] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1347 ms
+2024-11-02T16:57:22.975-05:00  INFO 18140 --- [falconshield] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T16:57:23.017-05:00  INFO 18140 --- [falconshield] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T16:57:23.060-05:00  INFO 18140 --- [falconshield] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T16:57:23.291-05:00  INFO 18140 --- [falconshield] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T16:57:23.324-05:00  INFO 18140 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T16:57:24.714-05:00  INFO 18140 --- [falconshield] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26b59306
+2024-11-02T16:57:24.717-05:00  INFO 18140 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T16:57:25.880-05:00  INFO 18140 --- [falconshield] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T16:57:26.738-05:00  WARN 18140 --- [falconshield] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-11-02T16:57:26.740-05:00  WARN 18140 --- [falconshield] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk8ba2nntlqc4j4ltigns7anrtm" of relation "sensor" does not exist, skipping
+2024-11-02T16:57:26.856-05:00  INFO 18140 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T16:57:27.074-05:00  WARN 18140 --- [falconshield] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sensorController' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\controllers\SensorController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'processSensorReadingCommandHandler' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\handlers\commands\ProcessSensorReadingCommandHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.verysafe.falconshield.sensors.domain.services.commands.ISensorCommands' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-02T16:57:27.075-05:00  INFO 18140 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T16:57:27.078-05:00  INFO 18140 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T16:57:27.901-05:00  INFO 18140 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T16:57:27.920-05:00  INFO 18140 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-02T16:57:27.935-05:00  INFO 18140 --- [falconshield] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-02T16:57:27.965-05:00 ERROR 18140 --- [falconshield] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.verysafe.falconshield.sensors.application.handlers.commands.ProcessSensorReadingCommandHandler required a bean of type 'com.verysafe.falconshield.sensors.domain.services.commands.ISensorCommands' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.verysafe.falconshield.sensors.domain.services.commands.ISensorCommands' in your configuration.
+
+2024-11-02T16:59:32.005-05:00  INFO 13360 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Starting FalconshieldApplication using Java 21.0.5 with PID 13360 (C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes started by Gaby in C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi)
+2024-11-02T16:59:32.009-05:00  INFO 13360 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T16:59:32.059-05:00  INFO 13360 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-02T16:59:32.059-05:00  INFO 13360 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-02T16:59:32.689-05:00  INFO 13360 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T16:59:32.752-05:00  INFO 13360 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-11-02T16:59:33.232-05:00  INFO 13360 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-02T16:59:33.244-05:00  INFO 13360 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T16:59:33.245-05:00  INFO 13360 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02T16:59:33.288-05:00  INFO 13360 --- [falconshield] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T16:59:33.289-05:00  INFO 13360 --- [falconshield] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1229 ms
+2024-11-02T16:59:33.432-05:00  INFO 13360 --- [falconshield] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T16:59:33.472-05:00  INFO 13360 --- [falconshield] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T16:59:33.515-05:00  INFO 13360 --- [falconshield] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T16:59:33.690-05:00  INFO 13360 --- [falconshield] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T16:59:33.722-05:00  INFO 13360 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T16:59:35.054-05:00  INFO 13360 --- [falconshield] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47c4df88
+2024-11-02T16:59:35.057-05:00  INFO 13360 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T16:59:36.214-05:00  INFO 13360 --- [falconshield] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T16:59:36.738-05:00  INFO 13360 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T16:59:37.063-05:00  WARN 13360 --- [falconshield] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sensorController' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\controllers\SensorController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'getSensorReadingsQueryHandler' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\handlers\queries\GetSensorReadingsQueryHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.verysafe.falconshield.sensors.domain.services.queries.ISensorQueries' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-02T16:59:37.064-05:00  INFO 13360 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T16:59:37.069-05:00  INFO 13360 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T16:59:37.512-05:00  INFO 13360 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T16:59:37.520-05:00  INFO 13360 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-02T16:59:37.534-05:00  INFO 13360 --- [falconshield] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-02T16:59:37.555-05:00 ERROR 13360 --- [falconshield] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.verysafe.falconshield.sensors.application.handlers.queries.GetSensorReadingsQueryHandler required a bean of type 'com.verysafe.falconshield.sensors.domain.services.queries.ISensorQueries' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.verysafe.falconshield.sensors.domain.services.queries.ISensorQueries' in your configuration.
+
+2024-11-02T17:01:05.384-05:00  INFO 28236 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Starting FalconshieldApplication using Java 21.0.5 with PID 28236 (C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes started by Gaby in C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi)
+2024-11-02T17:01:05.391-05:00  INFO 28236 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T17:01:05.450-05:00  INFO 28236 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-02T17:01:05.450-05:00  INFO 28236 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-02T17:01:06.172-05:00  INFO 28236 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T17:01:06.252-05:00  INFO 28236 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2024-11-02T17:01:06.791-05:00  INFO 28236 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-02T17:01:06.805-05:00  INFO 28236 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T17:01:06.806-05:00  INFO 28236 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02T17:01:06.860-05:00  INFO 28236 --- [falconshield] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T17:01:06.861-05:00  INFO 28236 --- [falconshield] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+2024-11-02T17:01:07.075-05:00  INFO 28236 --- [falconshield] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T17:01:07.113-05:00  INFO 28236 --- [falconshield] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T17:01:07.148-05:00  INFO 28236 --- [falconshield] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T17:01:07.398-05:00  INFO 28236 --- [falconshield] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T17:01:07.425-05:00  INFO 28236 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T17:01:08.883-05:00  INFO 28236 --- [falconshield] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@192e8eb1
+2024-11-02T17:01:08.887-05:00  INFO 28236 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T17:01:10.029-05:00  INFO 28236 --- [falconshield] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T17:01:10.525-05:00  INFO 28236 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:01:11.002-05:00  WARN 28236 --- [falconshield] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02T17:01:11.421-05:00  INFO 28236 --- [falconshield] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-02T17:01:11.463-05:00  INFO 28236 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-02T17:01:11.471-05:00  INFO 28236 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Started FalconshieldApplication in 6.482 seconds (process running for 7.109)
+2024-11-02T17:01:16.582-05:00  INFO 28236 --- [falconshield] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02T17:01:16.583-05:00  INFO 28236 --- [falconshield] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-02T17:01:16.585-05:00  INFO 28236 --- [falconshield] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-02T17:01:17.358-05:00  INFO 28236 --- [falconshield] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 207 ms
+2024-11-02T17:02:11.254-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:02:11.260-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T17:02:12.385-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,5 +1,5 @@
 package com.verysafe.falconshield.sensors.domain.services.commands;
 
-public class ISensorCommands {
-    
+public interface ISensorCommands {
+    void processReading(Long sensorId, Float readingValue);
 }
