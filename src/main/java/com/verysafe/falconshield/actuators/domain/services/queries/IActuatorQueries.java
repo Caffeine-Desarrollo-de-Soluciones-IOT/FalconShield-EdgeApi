@@ -1,5 +1,7 @@
 package com.verysafe.falconshield.actuators.domain.services.queries;
 
-public class IActuatorQueries {
-    
+import com.verysafe.falconshield.actuators.application.dto.response.ActuatorResponseDto;
+
+public interface IActuatorQueries {
+    ActuatorResponseDto getActuatorStatus(Long id);
 }

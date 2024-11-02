@@ -1,5 +1,5 @@
 package com.verysafe.falconshield.actuators.domain.services.commands;
 
-public class IActuatorCommands {
-    
+public interface IActuatorCommands {
+    void controlActuator(Long actuatorid, String commandType, String parameter);
 }
