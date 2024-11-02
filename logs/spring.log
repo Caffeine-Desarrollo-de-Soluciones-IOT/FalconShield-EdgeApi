@@ -301,3 +301,137 @@ Consider defining a bean of type 'com.verysafe.falconshield.sensors.domain.servi
 2024-11-02T17:02:11.254-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-02T17:02:11.260-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-11-02T17:02:12.385-05:00  INFO 28236 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T17:22:54.601-05:00  INFO 12888 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Starting FalconshieldApplication using Java 21.0.5 with PID 12888 (C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes started by Gaby in C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi)
+2024-11-02T17:22:54.606-05:00  INFO 12888 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T17:22:54.660-05:00  INFO 12888 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-02T17:22:54.661-05:00  INFO 12888 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-02T17:22:55.407-05:00  INFO 12888 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T17:22:55.471-05:00  INFO 12888 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2024-11-02T17:22:56.008-05:00  INFO 12888 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-02T17:22:56.020-05:00  INFO 12888 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T17:22:56.021-05:00  INFO 12888 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02T17:22:56.072-05:00  INFO 12888 --- [falconshield] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T17:22:56.074-05:00  INFO 12888 --- [falconshield] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1412 ms
+2024-11-02T17:22:56.244-05:00  INFO 12888 --- [falconshield] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T17:22:56.306-05:00  INFO 12888 --- [falconshield] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T17:22:56.350-05:00  INFO 12888 --- [falconshield] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T17:22:56.590-05:00  INFO 12888 --- [falconshield] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T17:22:56.620-05:00  INFO 12888 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T17:22:58.043-05:00  INFO 12888 --- [falconshield] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e4ebcdc
+2024-11-02T17:22:58.046-05:00  INFO 12888 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T17:22:59.147-05:00  INFO 12888 --- [falconshield] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T17:22:59.669-05:00  INFO 12888 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:22:59.897-05:00  WARN 12888 --- [falconshield] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sensorController' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\controllers\SensorController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'getSensorReadingsQueryHandler' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\handlers\queries\GetSensorReadingsQueryHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sensorQueriesImpl' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\domain\services\queries\SensorQueriesImpl.class]: Failed to instantiate [com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl]: Constructor threw exception
+2024-11-02T17:22:59.898-05:00  INFO 12888 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:22:59.901-05:00  INFO 12888 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T17:23:00.509-05:00  INFO 12888 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-02T17:23:00.515-05:00  INFO 12888 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-02T17:23:00.537-05:00  INFO 12888 --- [falconshield] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-02T17:23:00.554-05:00 ERROR 12888 --- [falconshield] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sensorController' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\controllers\SensorController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'getSensorReadingsQueryHandler' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\handlers\queries\GetSensorReadingsQueryHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sensorQueriesImpl' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\domain\services\queries\SensorQueriesImpl.class]: Failed to instantiate [com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.14.jar:6.1.14]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.5.jar:3.3.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.5.jar:3.3.5]
+	at com.verysafe.falconshield.FalconshieldApplication.main(FalconshieldApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.5.jar:3.3.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'getSensorReadingsQueryHandler' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\application\handlers\queries\GetSensorReadingsQueryHandler.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'sensorQueriesImpl' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\domain\services\queries\SensorQueriesImpl.class]: Failed to instantiate [com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sensorQueriesImpl' defined in file [C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes\com\verysafe\falconshield\sensors\domain\services\queries\SensorQueriesImpl.class]: Failed to instantiate [com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 36 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.14.jar:6.1.14]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 50 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor SensorResponseDto(Long, String, String, Float, String) is undefined
+
+	at com.verysafe.falconshield.sensors.domain.services.queries.SensorQueriesImpl.<init>(SensorQueriesImpl.java:22) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.14.jar:6.1.14]
+	... 52 common frames omitted
+
+2024-11-02T17:25:06.161-05:00  INFO 14708 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Starting FalconshieldApplication using Java 21.0.5 with PID 14708 (C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi\target\classes started by Gaby in C:\Users\Gaby\Desktop\CICLO IX\IoT\FalconShield-EdgeApi)
+2024-11-02T17:25:06.167-05:00  INFO 14708 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-02T17:25:06.215-05:00  INFO 14708 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-02T17:25:06.216-05:00  INFO 14708 --- [falconshield] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-02T17:25:06.974-05:00  INFO 14708 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-02T17:25:07.033-05:00  INFO 14708 --- [falconshield] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-11-02T17:25:07.537-05:00  INFO 14708 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-02T17:25:07.546-05:00  INFO 14708 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-02T17:25:07.547-05:00  INFO 14708 --- [falconshield] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-02T17:25:07.588-05:00  INFO 14708 --- [falconshield] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-02T17:25:07.589-05:00  INFO 14708 --- [falconshield] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1372 ms
+2024-11-02T17:25:07.736-05:00  INFO 14708 --- [falconshield] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-02T17:25:07.775-05:00  INFO 14708 --- [falconshield] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-02T17:25:07.804-05:00  INFO 14708 --- [falconshield] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-02T17:25:08.001-05:00  INFO 14708 --- [falconshield] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-02T17:25:08.028-05:00  INFO 14708 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-02T17:25:09.314-05:00  INFO 14708 --- [falconshield] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a9825bb
+2024-11-02T17:25:09.316-05:00  INFO 14708 --- [falconshield] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-02T17:25:10.526-05:00  INFO 14708 --- [falconshield] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-02T17:25:11.020-05:00  INFO 14708 --- [falconshield] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:25:11.556-05:00  WARN 14708 --- [falconshield] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-02T17:25:12.101-05:00  INFO 14708 --- [falconshield] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-02T17:25:12.171-05:00  INFO 14708 --- [falconshield] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-02T17:25:12.183-05:00  INFO 14708 --- [falconshield] [restartedMain] c.v.f.FalconshieldApplication            : Started FalconshieldApplication in 6.413 seconds (process running for 6.943)
+2024-11-02T17:25:20.792-05:00  INFO 14708 --- [falconshield] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-02T17:25:20.794-05:00  INFO 14708 --- [falconshield] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-02T17:25:20.796-05:00  INFO 14708 --- [falconshield] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-02T17:25:21.499-05:00  INFO 14708 --- [falconshield] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 320 ms
+2024-11-02T17:25:49.049-05:00  INFO 14708 --- [falconshield] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-02T17:25:49.054-05:00  INFO 14708 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-02T17:25:50.164-05:00  INFO 14708 --- [falconshield] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
